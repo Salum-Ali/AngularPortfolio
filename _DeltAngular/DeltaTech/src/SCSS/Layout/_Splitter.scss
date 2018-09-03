@@ -1,0 +1,15 @@
+@import "/../../SCSS/Variable/Color";
+
+.sectionSplitter {
+  background-color: $white;
+}
+
+.longSplitter {
+  @extend .sectionSplitter;
+  width: 50%;
+}
+
+.shortSplitter {
+  @extend .sectionSplitter;
+  width: 25%;
+}

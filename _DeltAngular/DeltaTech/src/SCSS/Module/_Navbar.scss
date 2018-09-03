@@ -1,0 +1,39 @@
+@import "/../../SCSS/Variable/Color";
+
+nav {
+
+  // &.hornav {
+  //   border-radius: 999px;
+  //   background-color: #fff;
+  // }
+  ul {
+    li {
+      a:hover {
+        background: $blue;
+        border-radius: 999px;
+      }
+
+      .dropdown-menu {
+        justify-content: center;
+
+        a.dropdown-item {
+          color: $white;
+          background-color: rgba($color: $black, $alpha: .75);
+          transition: all 500ms ease-in;
+          text-align: center;
+
+          &:hover {
+            color: $black;
+            background-color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 381px) {
+//   .navbar-nav>li {
+//     padding-top: 0;
+//   }
+// }

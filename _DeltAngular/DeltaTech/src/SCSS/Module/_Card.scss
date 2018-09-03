@@ -1,0 +1,28 @@
+.card {
+  background: transparent;
+}
+
+.card-group .card {
+  @extend .card;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.card-deck .card {
+  @extend .card;
+  margin: 15px;
+  border: 1px solid white;
+}
+
+// #mapCard {
+//   background: darken($red, 10%);
+//   background: rgba($red, .125) ;
+// }
+// #creditCard {
+//   background: darken($blue, 10%);
+//   background: rgba($blue, .125) ;
+// }
+// #contactCard {
+//   background: darken($green, 10%);
+//   background: rgba($green, .125) ;
+// }
