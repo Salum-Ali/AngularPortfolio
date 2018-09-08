@@ -1,0 +1,92 @@
+<!-- <div class="jumbotron">
+  <div class="container">
+    <ngb-alert type="success" [dismissible]="false">
+      Bootstrap is working!
+    </ngb-alert>
+
+    <h1>
+      <i class="fa fa-bath" aria-hidden="true"></i>
+      And so is Font Awesome!
+    </h1>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <p>
+    A progress bar:
+    <ngb-progressbar showValue="true" type="success" [value]="65">
+    </ngb-progressbar>
+  </p>
+</div> -->
+
+<!-- <div class="container">
+  <ngb-tabset>
+    <ngb-tab title="About Me">
+      <ng-template ngbTabContent>
+        <p class="mt-4">Content for tab 1.
+          <button type="button" class="btn btn-secondary" placement="bottom" ngbPopover="A popover in tab 1"
+            popoverTitle="Bacon is good">
+            Click me
+          </button>
+        </p>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Lettuce">
+      <ng-template ngbTabContent>
+        <p>Content for tab 2</p>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Tomatoes">
+      <ng-template ngbTabContent>
+        <p>Content for tab 3</p>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div> -->
+
+<!-- Nav tabs -->
+<!-- <ul class="nav nav-pills nav-justified" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" router-link="me">About Me</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#site">This Website</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+  </li>
+</ul> -->
+
+<!-- Tab panes -->
+<!-- <div class="tab-content">
+
+  
+  <div id="menu2" class="container tab-pane fade"><br>
+    <h3>Menu 2</h3>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam.</p>
+  </div>
+  <router-outlet></router-outlet>
+
+</div> -->
+
+<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['me']">
+      About Me
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['site']">
+      The Site
+    </a>
+  </li>
+
+  ...
+
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+    @import '../Variable/Color';
+
+    nav {
+      ul {
+        padding: 0;
+        margin: 10px;
+
+        a {
+          padding: 5px;
+          transition: all ease-in-out 1000ms;
+        }
+
+        a:hover {
+          background: $red;
+          text-decoration: none;
+          border-radius: 999px;
+        }
+      }
+    }
+
+    .horiNav {
+      ul {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+
+    .vertiNav {
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }

@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $roseOld;
+  font-family: OptimusPrincepsSemiBold;
+  /*Placeholder font family untill I can find a good workflow/template to stick with*/
+}
+
+p {
+  color: $white;
+  font-size: 1.25em;
+}
+
+a {
+  color: $yellow;
+
+  &:hover {
+    color: $white;
+  }
+}
