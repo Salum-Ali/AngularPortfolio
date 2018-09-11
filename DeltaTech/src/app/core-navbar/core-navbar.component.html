@@ -10,22 +10,30 @@
   <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" routerLink="home">
           Home
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="info">
+      <!-- Dropdowns -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href data-toggle="dropdown">
           Info
         </a>
+        <div class="dropdown-menu " style="background-color: transparent">
+          <a class="dropdown-item" routerLink="info/me">
+            About Me
+          </a>
+          <a class="dropdown-item" routerLink="info/site">
+            This Site
+          </a>
+        </div>
       </li>
-      <!-- Dropdowns -->
-      <li class="nav-item dropdown justify-content-center">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href data-toggle="dropdown">
           CV's
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="CV">
             Main (complete) CV
           </a>
           <a class="dropdown-item" href="#">
@@ -40,7 +48,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" href data-toggle="dropdown">
           Portfolios
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
@@ -56,7 +64,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" href data-toggle="dropdown">
           Projects
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
@@ -75,7 +83,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href class="nav-link disabled">
           Link Other
         </a>
       </li>

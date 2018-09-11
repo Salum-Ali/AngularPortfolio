@@ -1,11 +1,12 @@
-@import "/../../SCSS/Variable/Color";
+@import "../Variable/Color";
 
 button {
+  /* This is actually meant to be !important apparantly */
   border-radius: 999px !important;
 
   //   background-color: green;
   &:hover {
-    background-color: #123456;
+    background-color: $blueRegal;
     color: $yellow;
     border-radius: 999px;
   }

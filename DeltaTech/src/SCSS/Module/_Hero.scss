@@ -1,11 +1,19 @@
 #hero-image {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-attachment: fixed;
+  // background-size: cover;
+  // height: 100%;
+  // width: 100%;
+
   &.index-hero {
-    background-image: url(/IMG/LGO/_DS-LOGO_0-3-0-1-0_Plus-DarkSparkles_123-LRS-Fix-TestOne.png);
+    background-image: url(/../../assets/IMG/LGO/_DS-LOGO_0-3-0-1-0_Plus-DarkSparkles_123-LRS-Fix-TestOne.png);
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
+    // background-size: cover;
   }
+
   /* &.resume-hero
   {
     This is a Future Section... 

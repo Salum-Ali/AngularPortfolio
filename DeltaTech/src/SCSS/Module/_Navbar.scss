@@ -9,7 +9,7 @@ nav {
   ul {
     li {
       a:hover {
-        background: $blue;
+        // background: $blue;
         border-radius: 999px;
       }
 
@@ -23,7 +23,7 @@ nav {
           text-align: center;
 
           &:hover {
-            color: $black;
+            // color: $black;
             background-color: $red;
           }
         }

@@ -5,6 +5,7 @@
 @import "SCSS/Layout/Foot";
 @import "SCSS/Layout/Splitter";
 @import "SCSS/Module/Button";
+@import "SCSS/Module/Hero";
 @import "SCSS/Particle/Text";
 @import "SCSS/Particle/Icon";
 @import "SCSS/Particle/Image";
@@ -17,7 +18,7 @@
 }
 
 body {
-  background: $grey;
+  background: $black;
   text-align: center;
 }
 

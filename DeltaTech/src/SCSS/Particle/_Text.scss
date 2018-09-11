@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   color: $roseOld;
-  font-family: OptimusPrincepsSemiBold;
+  font-family: OptimusPrincepsSemiBold, sans-serif;
   /*Placeholder font family untill I can find a good workflow/template to stick with*/
 }
 
@@ -18,6 +18,8 @@ a {
   color: $yellow;
 
   &:hover {
-    color: $white;
+    color: orange;
+    // color: $white;
+    background-color: $blueRegal;
   }
 }

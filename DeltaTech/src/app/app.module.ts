@@ -20,6 +20,10 @@ import { ProjectFutureComponent } from './project-future/project-future.componen
 import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
 import { InfoMeComponent } from './info-me/info-me.component';
 import { InfoSiteComponent } from './info-site/info-site.component';
+import { PageHomeComponent } from './page-home/page-home.component';
+import { PageResumeComponent } from './page-resume/page-resume.component';
+import { PagePortfolioComponent } from './page-portfolio/page-portfolio.component';
+import { PageProjectComponent } from './page-project/page-project.component';
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -40,7 +44,11 @@ import { InfoSiteComponent } from './info-site/info-site.component';
     ProjectFutureComponent,
     ProjectOngoingComponent,
     InfoMeComponent,
-    InfoSiteComponent
+    InfoSiteComponent,
+    PageHomeComponent,
+    PageResumeComponent,
+    PagePortfolioComponent,
+    PageProjectComponent
   ],
   imports: [
     NgbModule,
