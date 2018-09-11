@@ -13,6 +13,13 @@ import { SectionBottomComponent } from './section-bottom/section-bottom.componen
 import { PageAboutComponent } from './page-about/page-about.component';
 import { ShardMeComponent } from './shard-me/shard-me.component';
 import { ShardSiteComponent } from './shard-site/shard-site.component';
+import { ResumeMainComponent } from './resume-main/resume-main.component';
+import { ProjectPastComponent } from './project-past/project-past.component';
+import { ProjectPresentComponent } from './project-present/project-present.component';
+import { ProjectFutureComponent } from './project-future/project-future.component';
+import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
+import { InfoMeComponent } from './info-me/info-me.component';
+import { InfoSiteComponent } from './info-site/info-site.component';
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -26,7 +33,14 @@ import { ShardSiteComponent } from './shard-site/shard-site.component';
     SectionBottomComponent,
     PageAboutComponent,
     ShardMeComponent,
-    ShardSiteComponent
+    ShardSiteComponent,
+    ResumeMainComponent,
+    ProjectPastComponent,
+    ProjectPresentComponent,
+    ProjectFutureComponent,
+    ProjectOngoingComponent,
+    InfoMeComponent,
+    InfoSiteComponent
   ],
   imports: [
     NgbModule,
