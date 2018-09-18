@@ -12,6 +12,7 @@ import { ResumeGamedevComponent } from './resume-gamedev/resume-gamedev.componen
 import { ProjectPastComponent } from './project-past/project-past.component';
 import { ProjectPresentComponent } from './project-present/project-present.component';
 import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
+import { ProjectFutureComponent } from './project-future/project-future.component';
 
 const routes: Routes = [
     // {
@@ -80,7 +81,7 @@ const routes: Routes = [
             },
             {
                 path: 'future',
-                component: ProjectPresentComponent
+                component: ProjectFutureComponent
             },
             {
                 path: 'ongoing',
