@@ -99,8 +99,10 @@
             <router-outlet></router-outlet>
           </div>
         </div>
-        <div class="row justify-content-center" id="adbar">
-          <app-section-advert></app-section-advert>
+        <div class="row justify-content-center" id="ads">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <app-section-advert></app-section-advert>
+          </div>
         </div>
       </section>
     </main>
@@ -134,7 +136,7 @@
 
     <hr class="sectionSplitter shortSplitter">
     <div id="toTop">
-      <a id="End" routerLinkActive="active-link" fragment="Top" href="#Top">
+      <a id="End" [routerLink]="['.']" fragment="Top" href>
         Go to Top of Page
       </a>
     </div>
