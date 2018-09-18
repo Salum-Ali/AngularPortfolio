@@ -7,6 +7,11 @@ import { PageHomeComponent } from './page-home/page-home.component';
 import { PageResumeComponent } from './page-resume/page-resume.component';
 import { PagePortfolioComponent } from './page-portfolio/page-portfolio.component';
 import { PageProjectComponent } from './page-project/page-project.component';
+import { ResumeMainComponent } from './resume-main/resume-main.component';
+import { ResumeGamedevComponent } from './resume-gamedev/resume-gamedev.component';
+import { ProjectPastComponent } from './project-past/project-past.component';
+import { ProjectPresentComponent } from './project-present/project-present.component';
+import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
 
 const routes: Routes = [
     // {
@@ -17,10 +22,6 @@ const routes: Routes = [
     {
         path: 'home',
         component: PageHomeComponent,
-    },
-    {
-        path: 'CV',
-        component: PageResumeComponent,
     },
     {
         path: 'info',
@@ -40,7 +41,53 @@ const routes: Routes = [
                 component: ShardSiteComponent
             }
         ]
-    }
+    },
+    {
+        path: 'cv',
+        component: PageResumeComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'main',
+                pathMatch: 'full'
+            },
+            {
+                path: 'main',
+                component: ResumeMainComponent
+            },
+            {
+                path: 'game',
+                component: ResumeGamedevComponent
+            }
+        ]
+    },
+    {
+        path: 'projects',
+        component: PageProjectComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'present',
+                pathMatch: 'full'
+            },
+            {
+                path: 'past',
+                component: ProjectPastComponent
+            },
+            {
+                path: 'present',
+                component: ProjectPresentComponent
+            },
+            {
+                path: 'future',
+                component: ProjectPresentComponent
+            },
+            {
+                path: 'ongoing',
+                component: ProjectOngoingComponent
+            }
+        ]
+    },
 ];
 
 @NgModule({

@@ -48,8 +48,12 @@
 
 <div id="hero-image" class="index-hero">
   <div id="hero-content">
-    <app-section-top></app-section-top>
-
+    <!-- <app-section-top></app-section-top> -->
+    <div id="toEnd">
+      <a id="Top" fragment="End" queryParamsHandling="preserve">
+        Go to End of Page
+      </a>
+    </div>
     <hr class="sectionSplitter shortSplitter">
 
     <header class="container" id="site-header">
@@ -133,7 +137,12 @@
     </footer>
 
     <hr class="sectionSplitter shortSplitter">
+    <div id="toTop">
+      <a id="End" routerLinkActive="active-link" fragment="Top" href="#Top">
+        Go to Top of Page
+      </a>
+    </div>
 
-    <app-section-bottom></app-section-bottom>
+    <!-- <app-section-bottom></app-section-bottom> -->
   </div>
 </div>

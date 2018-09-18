@@ -1,3 +1,17 @@
-<p>
-  page-resume works!
-</p>
+<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['main']">
+      Main CV
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['game']">
+      Game Dev
+    </a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade">
+    <router-outlet></router-outlet>
+  </div>
+</div>
