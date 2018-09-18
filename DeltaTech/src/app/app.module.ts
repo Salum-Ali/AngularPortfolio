@@ -31,6 +31,7 @@ import { PagePortfolioComponent } from './page-portfolio/page-portfolio.componen
 import { PageProjectComponent } from './page-project/page-project.component';
 import { ResumeGamedevComponent } from './resume-gamedev/resume-gamedev.component';
 import { SectionAdvertComponent } from './section-advert/section-advert.component';
+import { PageNoneComponent } from './page-none/page-none.component';
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -57,7 +58,8 @@ import { SectionAdvertComponent } from './section-advert/section-advert.componen
     PagePortfolioComponent,
     PageProjectComponent,
     ResumeGamedevComponent,
-    SectionAdvertComponent
+    SectionAdvertComponent,
+    PageNoneComponent
   ],
   imports: [
     NgbModule,

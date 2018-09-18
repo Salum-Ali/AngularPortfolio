@@ -13,13 +13,14 @@ import { ProjectPastComponent } from './project-past/project-past.component';
 import { ProjectPresentComponent } from './project-present/project-present.component';
 import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
 import { ProjectFutureComponent } from './project-future/project-future.component';
+import { PageNoneComponent } from './page-none/page-none.component';
 
 const routes: Routes = [
-    // {
-    //     path: '',
-    //     redirectTo: '/home',
-    //     pathMatch: 'full'
-    // },
+    {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
     {
         path: 'home',
         component: PageHomeComponent,
@@ -89,6 +90,11 @@ const routes: Routes = [
             }
         ]
     },
+    {
+        path: '**',
+        component: PageNoneComponent
+    }
+
 ];
 
 @NgModule({
