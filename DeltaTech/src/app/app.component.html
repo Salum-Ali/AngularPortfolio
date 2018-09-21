@@ -50,7 +50,7 @@
   <div id="hero-content">
     <!-- <app-section-top></app-section-top> -->
     <div id="toEnd">
-      <a id="Top" fragment="End" queryParamsHandling="preserve">
+      <a name="Top" id="Top" [routerLink]="['.']" fragment="End" queryParamsHandling="merge">
         Go to End of Page
       </a>
     </div>
@@ -136,7 +136,7 @@
 
     <hr class="sectionSplitter shortSplitter">
     <div id="toTop">
-      <a id="End" [routerLink]="['.']" fragment="Top" href>
+      <a name="End" id="End" [routerLink]="['.']" fragment="Top">
         Go to Top of Page
       </a>
     </div>

@@ -14,6 +14,7 @@ import { ProjectPresentComponent } from './project-present/project-present.compo
 import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
 import { ProjectFutureComponent } from './project-future/project-future.component';
 import { PageNoneComponent } from './page-none/page-none.component';
+import { componentFactoryName } from '@angular/compiler';
 
 const routes: Routes = [
     {
@@ -57,10 +58,30 @@ const routes: Routes = [
                 path: 'main',
                 component: ResumeMainComponent
             },
-            {
-                path: 'game',
-                component: ResumeGamedevComponent
-            }
+            // {
+            //     path: 'game',
+            //     component: ResumeGamedevComponent
+            // }
+            // {
+            //     path: 'sculpting',
+            //     component: ResumeSculptingComponent
+            // },
+            // {
+            //     path: 'art',
+            //     component: ResumeArtComponent
+            // },
+            // {
+            //     path: 'animation',
+            //     component: ResumeAnimationComponent
+            // },
+            // {
+            //     path: 'web',
+            //     component: ResumeWebComponent
+            // },
+            // {
+            //     path: 'code'
+            //     component: ResumeCodeComponent
+            // }
         ]
     },
     {
