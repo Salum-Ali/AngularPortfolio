@@ -6,7 +6,8 @@ h5,
 h6 {
   color: $roseOld;
   font-family: OptimusPrincepsSemiBold, sans-serif;
-  /*Placeholder font family untill I can find a good workflow/template to stick with*/
+  text-decoration: complement($color: $roseOld)
+    /*Placeholder font family untill I can find a good workflow/template to stick with*/
 }
 
 p {
@@ -18,8 +19,8 @@ a {
   color: $yellow;
 
   &:hover {
-    color: orange;
+    color: $yellow;
     // color: $white;
-    background-color: $blueRegal;
+    background-color: purple;
   }
 }

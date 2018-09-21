@@ -3,19 +3,19 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 @import "SCSS/Layout/Head";
+@import "SCSS/Module/Hero";
 @import "SCSS/Layout/Bod";
+@import "SCSS/Shard/Navbar";
 @import "SCSS/Layout/Foot";
 @import "SCSS/Layout/Splitter";
 @import "SCSS/Module/Button";
-@import "SCSS/Module/Hero";
 @import "SCSS/Particle/Text";
 @import "SCSS/Particle/Icon";
 @import "SCSS/Particle/Image";
-@import "SCSS/Shard/Navbar";
 @import "SCSS/Variable/Color";
 
 * {
-  transition: all ease-in-out 500ms;
+  transition: all ease-in-out 1000ms;
   text-align: center;
 }
 
