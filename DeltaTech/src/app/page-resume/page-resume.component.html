@@ -1,17 +1,32 @@
-<ul class="nav nav-pills nav-justified">
+<ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link" routerLinkActive="active" [routerLink]="['main']">
+    <a class="nav-link order-sm-3" routerLinkActive="active" [routerLink]="['main']">
       Main CV
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" routerLinkActive="active" [routerLink]="['game']">
-      Game Dev
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['sculpting']">
+      Modelling
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['animating']">
+      Animating
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['painting']">
+      Painting
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['scripting']">
+      Scripting
     </a>
   </li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane fade">
+  <div id="me" class="tab-pane fade in show active"><br>
     <router-outlet></router-outlet>
   </div>
 </div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResumeGamedevComponent } from './resume-gamedev.component';
+import { ResumeSculptingComponent } from './resume-sculpting.component';
 
-describe('ResumeGamedevComponent', () => {
-  let component: ResumeGamedevComponent;
-  let fixture: ComponentFixture<ResumeGamedevComponent>;
+describe('ResumeSculptingComponent', () => {
+  let component: ResumeSculptingComponent;
+  let fixture: ComponentFixture<ResumeSculptingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeGamedevComponent ]
+      declarations: [ ResumeSculptingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResumeGamedevComponent);
+    fixture = TestBed.createComponent(ResumeSculptingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

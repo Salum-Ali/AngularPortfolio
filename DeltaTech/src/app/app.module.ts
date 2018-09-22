@@ -29,9 +29,12 @@ import { PageHomeComponent } from './page-home/page-home.component';
 import { PageResumeComponent } from './page-resume/page-resume.component';
 import { PagePortfolioComponent } from './page-portfolio/page-portfolio.component';
 import { PageProjectComponent } from './page-project/page-project.component';
-import { ResumeGamedevComponent } from './resume-gamedev/resume-gamedev.component';
 import { SectionAdvertComponent } from './section-advert/section-advert.component';
 import { PageNoneComponent } from './page-none/page-none.component';
+import { ResumeArtComponent } from './resume-art/resume-art.component';
+import { ResumeAnimationComponent } from './resume-animation/resume-animation.component';
+import { ResumeCodeComponent } from './resume-code/resume-code.component';
+import { ResumeSculptingComponent } from './resume-sculpting/resume-sculpting.component';
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -57,9 +60,12 @@ import { PageNoneComponent } from './page-none/page-none.component';
     PageResumeComponent,
     PagePortfolioComponent,
     PageProjectComponent,
-    ResumeGamedevComponent,
     SectionAdvertComponent,
-    PageNoneComponent
+    PageNoneComponent,
+    ResumeArtComponent,
+    ResumeAnimationComponent,
+    ResumeCodeComponent,
+    ResumeSculptingComponent
   ],
   imports: [
     NgbModule,
