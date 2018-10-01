@@ -63,7 +63,7 @@ const routes: Routes = [
                 component: ResumeMainComponent
             },
             {
-                path: 'sculpting',
+                path: 'modelling',
                 component: ResumeSculptingComponent
             },
             // tempname?
