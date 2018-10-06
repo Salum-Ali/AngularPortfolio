@@ -13,8 +13,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SocialFeedsComponent } from './section/global/social-feeds/social-feeds.component';
 import { CoreNavbarComponent } from './section/global/core-navbar/core-navbar.component';
-import { SectionTopComponent } from './section-top/section-top.component';
-import { SectionBottomComponent } from './section-bottom/section-bottom.component';
+// import { SectionTopComponent } from './section/global/section-top/section-top.component';
+// import { SectionBottomComponent } from './section-bottom/section-bottom.component';
 import { PageAboutComponent } from './page/page-about/page-about.component';
 import { ResumeMainComponent } from './page/page-resume/resume-main/resume-main.component';
 import { ProjectPastComponent } from './page/page-project/project-past/project-past.component';
@@ -35,6 +35,10 @@ import { ResumeCodeComponent } from './page/page-resume/resume-code/resume-code.
 import { ResumeSculptingComponent } from './page/page-resume/resume-sculpting/resume-sculpting.component';
 import { CoreTopComponent } from './section/global/core-top/core-top.component';
 import { CoreBottomComponent } from './section/global/core-bottom/core-bottom.component';
+import { ContactComponent } from './page/contact/contact.component';
+import { MapComponent } from './page/map/map.component';
+import { CreditComponent } from './page/credit/credit.component';
+import { FootbarComponent } from './section/global/footbar/footbar.component';
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -44,8 +48,8 @@ import { CoreBottomComponent } from './section/global/core-bottom/core-bottom.co
     AppComponent,
     SocialFeedsComponent,
     CoreNavbarComponent,
-    SectionTopComponent,
-    SectionBottomComponent,
+    // SectionTopComponent,
+    // SectionBottomComponent,
     PageAboutComponent,
     // InfoMeComponent,
     // InfoSiteComponent,
@@ -68,6 +72,10 @@ import { CoreBottomComponent } from './section/global/core-bottom/core-bottom.co
     ResumeSculptingComponent,
     CoreTopComponent,
     CoreBottomComponent,
+    ContactComponent,
+    MapComponent,
+    CreditComponent,
+    FootbarComponent,
   ],
   imports: [
     NgbModule,

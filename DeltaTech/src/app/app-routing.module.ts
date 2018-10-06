@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageAboutComponent } from './page/page-about/page-about.component';
 // import { ShardMeComponent } from './shard-me/shard-me.component';
@@ -20,6 +20,8 @@ import { ResumeCodeComponent } from './page/page-resume/resume-code/resume-code.
 import { ResumeSculptingComponent } from './page/page-resume/resume-sculpting/resume-sculpting.component';
 import { InfoMeComponent } from './page/page-about/info-me/info-me.component';
 import { InfoSiteComponent } from './page/page-about/info-site/info-site.component';
+import { CreditComponent } from './page/credit/credit.component';
+import { MapComponent } from './page/map/map.component';
 
 const routes: Routes = [
     {
@@ -50,7 +52,7 @@ const routes: Routes = [
             }
         ]
     },
-    // ^ info ^
+    // ^ infos ^
     {
         path: 'cv',
         component: PageResumeComponent,
@@ -85,7 +87,7 @@ const routes: Routes = [
             // tempname?
         ]
     },
-    // ^ resume ^
+    // ^ resumes ^
     {
         path: 'projects',
         component: PageProjectComponent,
@@ -114,6 +116,20 @@ const routes: Routes = [
         ]
     },
     // ^ projects ^
+    {
+        path: 'credits',
+        component: CreditComponent,
+    },
+    {
+        path: 'maps',
+        component: MapComponent,
+    },
+    // ^ maps ^
+    {
+        path: 'credits',
+        component: MapComponent
+    },
+    // ^ credits ^
     {
         path: '**',
         component: PageNoneComponent
