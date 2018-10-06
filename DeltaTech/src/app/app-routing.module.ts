@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageAboutComponent } from './page/page-about/page-about.component';
-import { ShardMeComponent } from './shard-me/shard-me.component';
-import { ShardSiteComponent } from './shard-site/shard-site.component';
+// import { ShardMeComponent } from './shard-me/shard-me.component';
+// import { ShardSiteComponent } from './shard-site/shard-site.component';
 import { PageHomeComponent } from './page/page-home/page-home.component';
 import { PageResumeComponent } from './page/page-resume/page-resume.component';
 import { PagePortfolioComponent } from './page/page-portfolio/page-portfolio.component';
@@ -18,6 +18,8 @@ import { ResumeAnimationComponent } from './page/page-resume/resume-animation/re
 import { ResumeArtComponent } from './page/page-resume/resume-art/resume-art.component';
 import { ResumeCodeComponent } from './page/page-resume/resume-code/resume-code.component';
 import { ResumeSculptingComponent } from './page/page-resume/resume-sculpting/resume-sculpting.component';
+import { InfoMeComponent } from './page/page-about/info-me/info-me.component';
+import { InfoSiteComponent } from './page/page-about/info-site/info-site.component';
 
 const routes: Routes = [
     {
@@ -40,11 +42,11 @@ const routes: Routes = [
             },
             {
                 path: 'me',
-                component: ShardMeComponent
+                component: InfoMeComponent
             },
             {
                 path: 'site',
-                component: ShardSiteComponent
+                component: InfoSiteComponent
             }
         ]
     },

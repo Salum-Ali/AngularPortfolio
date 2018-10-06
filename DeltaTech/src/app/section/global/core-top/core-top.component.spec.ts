@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShardMeComponent } from './shard-me.component';
+import { CoreTopComponent } from './core-top.component';
 
-describe('ShardMeComponent', () => {
-  let component: ShardMeComponent;
-  let fixture: ComponentFixture<ShardMeComponent>;
+describe('CoreTopComponent', () => {
+  let component: CoreTopComponent;
+  let fixture: ComponentFixture<CoreTopComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShardMeComponent ]
+      declarations: [ CoreTopComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShardMeComponent);
+    fixture = TestBed.createComponent(CoreTopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

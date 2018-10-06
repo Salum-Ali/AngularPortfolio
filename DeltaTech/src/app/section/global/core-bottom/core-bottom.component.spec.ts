@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SectionTopComponent } from './section-top.component';
+import { CoreBottomComponent } from './core-bottom.component';
 
-describe('SectionTopComponent', () => {
-  let component: SectionTopComponent;
-  let fixture: ComponentFixture<SectionTopComponent>;
+describe('CoreBottomComponent', () => {
+  let component: CoreBottomComponent;
+  let fixture: ComponentFixture<CoreBottomComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SectionTopComponent ]
+      declarations: [ CoreBottomComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SectionTopComponent);
+    fixture = TestBed.createComponent(CoreBottomComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
