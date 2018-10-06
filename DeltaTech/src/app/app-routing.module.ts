@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageAboutComponent } from './page-about/page-about.component';
+import { PageAboutComponent } from './page/page-about/page-about.component';
 import { ShardMeComponent } from './shard-me/shard-me.component';
 import { ShardSiteComponent } from './shard-site/shard-site.component';
-import { PageHomeComponent } from './page-home/page-home.component';
-import { PageResumeComponent } from './page-resume/page-resume.component';
-import { PagePortfolioComponent } from './page-portfolio/page-portfolio.component';
-import { PageProjectComponent } from './page-project/page-project.component';
-import { ResumeMainComponent } from './resume-main/resume-main.component';
-import { ProjectPastComponent } from './project-past/project-past.component';
-import { ProjectPresentComponent } from './project-present/project-present.component';
-import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
-import { ProjectFutureComponent } from './project-future/project-future.component';
-import { PageNoneComponent } from './page-none/page-none.component';
+import { PageHomeComponent } from './page/page-home/page-home.component';
+import { PageResumeComponent } from './page/page-resume/page-resume.component';
+import { PagePortfolioComponent } from './page/page-portfolio/page-portfolio.component';
+import { PageProjectComponent } from './page/page-project/page-project.component';
+import { ResumeMainComponent } from './page/page-resume/resume-main/resume-main.component';
+import { ProjectPastComponent } from './page/page-project/project-past/project-past.component';
+import { ProjectPresentComponent } from './page/page-project/project-present/project-present.component';
+import { ProjectOngoingComponent } from './page/page-project/project-ongoing/project-ongoing.component';
+import { ProjectFutureComponent } from './page/page-project/project-future/project-future.component';
+import { PageNoneComponent } from './page/page-none/page-none.component';
 import { componentFactoryName } from '@angular/compiler';
-import { ResumeAnimationComponent } from './resume-animation/resume-animation.component';
-import { ResumeArtComponent } from './resume-art/resume-art.component';
-import { ResumeCodeComponent } from './resume-code/resume-code.component';
-import { ResumeSculptingComponent } from './resume-sculpting/resume-sculpting.component';
+import { ResumeAnimationComponent } from './page/page-resume/resume-animation/resume-animation.component';
+import { ResumeArtComponent } from './page/page-resume/resume-art/resume-art.component';
+import { ResumeCodeComponent } from './page/page-resume/resume-code/resume-code.component';
+import { ResumeSculptingComponent } from './page/page-resume/resume-sculpting/resume-sculpting.component';
 
 const routes: Routes = [
     {
