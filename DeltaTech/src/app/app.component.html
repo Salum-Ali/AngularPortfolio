@@ -1,53 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!-- <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-
-<div class="container">
-  <table class="table table-dark table-hover table-striped">
-    <thead class="thead-light">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Steve Smith</td>
-        <td>28</td>
-      </tr>
-      <tr>
-        <td>David Warner</td>
-        <td>29</td>
-      </tr>
-      <tr>
-        <td>Joe Root</td>
-        <td>27</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet> -->
-
-
 <div id="hero-image" class="index-hero">
   <div id="hero-content">
+
     <!-- <app-section-top></app-section-top> -->
     <div id="toEnd">
       <a name="Top" id="Top" [routerLink]="[ '.' ]" fragment="End" queryParamsHandling="merge">
@@ -58,15 +11,7 @@
 
     <header class="container" id="site-header">
       <section id="siteHeadings">
-        <h1>
-          Portfolio Website
-        </h1>
-        <h3>
-          Salum Muhammed
-        </h3>
-        <h6>
-          Ceative Semi-Intermediate
-        </h6>
+        <app-maintitle></app-maintitle>
       </section>
       <app-core-navbar></app-core-navbar>
     </header>
@@ -76,22 +21,17 @@
     <main id="site-content">
       <section class="container" id="core">
         <div class="row justify-content-center" id="blurb">
-          <!-- ^ justify-content-center here 
+          <!-- ^ justify-content-center here
               is so that the header elements are centred ^ -->
           <!-- ^ The "justify-content-center" classes on other rows
                are there as "Just in case" fallbacks, mainly ^ -->
           <h1>
             {{title}}
           </h1>
-          <p class="card-text">
-            This website was origionally done as a Web Authoring assignment, but was developed (aesthetically) from a
-            previous project
-            and will be used as a dynamic template for further projects.
-          </p>
+          <app-mainblurb></app-mainblurb>
         </div>
         <div class="row justify-content-center" id="content">
           <!-- ^ As of writing, card groups/decks are not responsive yet ^ -->
-
           <div class="col-12 col-sm-12 col-md-12 col-lg-3 order-12 order-sm-12 order-md-12 order-lg-1" id="feed">
             <app-social-feeds></app-social-feeds>
           </div>
@@ -110,43 +50,16 @@
     <hr class="sectionSplitter longSplitter">
 
     <footer id=site-footer class="container">
-      <div id="btn-toolbar">
-        <div class="wrapper">
-          <div class="btn-group d-flex">
-            <div class="btn-group w-100" role="group">
-              <button type="button" class="btn w-100">
-                <a [routerLink]="[ '/contacts' ]" routerLinkActive="active">
-                  Contacts
-                </a>
-              </button>
-            </div>
-            <div class="btn-group w-100" role="group">
-              <button type="button" class="btn w-100">
-                <a [routerLink]="[ '/maps' ]" routerLinkActive="active">
-                  Maps
-                </a>
-              </button>
-            </div>
-            <div class="btn-group w-100" role="group">
-              <button type="button" class="btn w-100">
-                <a [routerLink]="[ '/credits' ]" routerLinkActive="active">
-                  Credits
-                </a>
-              </button>
-            </div>
-
-          </div>
-        </div>
-      </div>
+      <app-footbar></app-footbar>
     </footer>
 
     <hr class="sectionSplitter shortSplitter">
+
     <div id="toTop">
       <a name="End" id="End" [routerLink]="['.']" fragment="Top">
         Go to Top of Page
       </a>
     </div>
-
     <!-- <app-section-bottom></app-section-bottom> -->
   </div>
 </div>

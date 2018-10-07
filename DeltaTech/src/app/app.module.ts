@@ -39,6 +39,8 @@ import { ContactComponent } from './page/contact/contact.component';
 import { MapComponent } from './page/map/map.component';
 import { CreditComponent } from './page/credit/credit.component';
 import { FootbarComponent } from './section/global/footbar/footbar.component';
+import { MaintitleComponent } from './section/global/maintitle/maintitle.component';
+import { MainblurbComponent } from './section/global/mainblurb/mainblurb.component';
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -76,6 +78,8 @@ import { FootbarComponent } from './section/global/footbar/footbar.component';
     MapComponent,
     CreditComponent,
     FootbarComponent,
+    MaintitleComponent,
+    MainblurbComponent,
   ],
   imports: [
     NgbModule,
