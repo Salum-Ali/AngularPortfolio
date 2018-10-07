@@ -1,15 +1,14 @@
 #hero-image {
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
-  // background-size: cover;
-  // height: 100%;
-  // width: 100%;
+  background-image: url(./assets/IMG/LGO/DS_WhiteWash-Logo.png) !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 
   &.index-hero {
-    background-image: url(./assets/IMG/LGO/DS_WhiteWash-Logo.png);
-    // background-image: url(https://github.com/SilverPhoenix2943/_Angular-Based-Portfolio-Website_SalumMuhammed/blob/master/DeltaTech/src/assets/IMG/LGO/_DS-LOGO_0-3-0-1-0_Plus-DarkSparkles_123-LRS-Fix-TestOne_SparkleyWhite-Out.png);
-    // background-image: 
+
     // background-repeat: no-repeat;
     // background-position: center center;
     // background-attachment: fixed;
@@ -31,6 +30,6 @@
     this is a future section
     } */
   #hero-content {
-    background-color: rgba(0, 0, 0, 1.0);
+    background-color: rgba(0, 0, 0, 0.5) !important;
   }
 }
