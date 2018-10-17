@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
+
+/* This is also a place where I will write test-code
+ - that I think *should* work -
+  temporarilly */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/*
+Why Indigo-pink?
+it was the default
+also I'm overriding most things with my own theming anyway
+*/
 
 @import "SCSS/Layout/Head";
 @import "SCSS/Module/Hero";
@@ -14,17 +22,24 @@
 @import "SCSS/Particle/Image";
 @import "SCSS/Variable/Color";
 
-* {
-  transition: all ease-in-out 1000ms;
-  text-align: center;
-}
+
 
 body {
   background: $black;
   text-align: center;
+
+  * {
+    transition: all ease-in-out 1000ms;
+  }
 }
 
 #toEnd,
 #toTop {
   padding: 5vh;
 }
+
+// a.nav-link.io-icons.resume {
+//   &:after {
+//     content: "index";
+//   }
+// }

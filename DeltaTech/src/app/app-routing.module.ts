@@ -1,26 +1,24 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageAboutComponent } from './page/page-about/page-about.component';
-// import { ShardMeComponent } from './shard-me/shard-me.component';
-// import { ShardSiteComponent } from './shard-site/shard-site.component';
-import { PageHomeComponent } from './page/page-home/page-home.component';
-import { PageResumeComponent } from './page/page-resume/page-resume.component';
-import { PagePortfolioComponent } from './page/page-portfolio/page-portfolio.component';
-import { PageProjectComponent } from './page/page-project/page-project.component';
-import { ResumeMainComponent } from './page/page-resume/resume-main/resume-main.component';
-import { ProjectPastComponent } from './page/page-project/project-past/project-past.component';
-import { ProjectPresentComponent } from './page/page-project/project-present/project-present.component';
-import { ProjectOngoingComponent } from './page/page-project/project-ongoing/project-ongoing.component';
-import { ProjectFutureComponent } from './page/page-project/project-future/project-future.component';
-import { PageNoneComponent } from './page/page-none/page-none.component';
+import { InfoComponent } from './page/info/info.component';
+import { HomeComponent } from './page/home/home.component';
+import { ResumeComponent } from './page/resume/resume.component';
+import { ProjectComponent } from './page/project/project.component';
+import { ResumeMainComponent } from './page/resume/resume-main/resume-main.component';
+import { ProjectPastComponent } from './page/project/project-past/project-past.component';
+import { ProjectPresentComponent } from './page/project/project-present/project-present.component';
+import { ProjectOngoingComponent } from './page/project/project-ongoing/project-ongoing.component';
+import { ProjectFutureComponent } from './page/project/project-future/project-future.component';
+import { NoneComponent } from './page/none/none.component';
 import { componentFactoryName } from '@angular/compiler';
-import { ResumeAnimationComponent } from './page/page-resume/resume-animation/resume-animation.component';
-import { ResumeArtComponent } from './page/page-resume/resume-art/resume-art.component';
-import { ResumeCodeComponent } from './page/page-resume/resume-code/resume-code.component';
-import { ResumeSculptingComponent } from './page/page-resume/resume-sculpting/resume-sculpting.component';
-import { InfoMeComponent } from './page/page-about/info-me/info-me.component';
-import { InfoSiteComponent } from './page/page-about/info-site/info-site.component';
+import { ResumeAnimationComponent } from './page/resume/resume-animation/resume-animation.component';
+import { ResumeArtComponent } from './page/resume/resume-art/resume-art.component';
+import { ResumeCodeComponent } from './page/resume/resume-code/resume-code.component';
+import { ResumeSculptingComponent } from './page/resume/resume-sculpting/resume-sculpting.component';
+import { InfoMeComponent } from './page/info/info-me/info-me.component';
+import { InfoSiteComponent } from './page/info/info-site/info-site.component';
 import { CreditComponent } from './page/credit/credit.component';
+import { ContactComponent } from './page/contact/contact.component';
 import { MapComponent } from './page/map/map.component';
 
 const routes: Routes = [
@@ -31,11 +29,11 @@ const routes: Routes = [
     },
     {
         path: 'home',
-        component: PageHomeComponent,
+        component: HomeComponent,
     },
     {
         path: 'info',
-        component: PageAboutComponent,
+        component: InfoComponent,
         children: [
             {
                 path: '',
@@ -55,7 +53,7 @@ const routes: Routes = [
     // ^ infos ^
     {
         path: 'cv',
-        component: PageResumeComponent,
+        component: ResumeComponent,
         children: [
             {
                 path: '',
@@ -90,7 +88,7 @@ const routes: Routes = [
     // ^ resumes ^
     {
         path: 'projects',
-        component: PageProjectComponent,
+        component: ProjectComponent,
         children: [
             {
                 path: '',
@@ -117,8 +115,8 @@ const routes: Routes = [
     },
     // ^ projects ^
     {
-        path: 'credits',
-        component: CreditComponent,
+        path: 'contacts',
+        component: ContactComponent,
     },
     {
         path: 'maps',
@@ -127,12 +125,12 @@ const routes: Routes = [
     // ^ maps ^
     {
         path: 'credits',
-        component: MapComponent
+        component: CreditComponent
     },
     // ^ credits ^
     {
         path: '**',
-        component: PageNoneComponent
+        component: NoneComponent
     }
 
 ];

@@ -1,0 +1,17 @@
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['me']">
+      About Me
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['site']">
+      The Site
+    </a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade in show active"><br>
+    <router-outlet></router-outlet>
+  </div>
+</div>

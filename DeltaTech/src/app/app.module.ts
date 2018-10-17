@@ -15,24 +15,19 @@ import { SocialFeedsComponent } from './section/global/social-feeds/social-feeds
 import { CoreNavbarComponent } from './section/global/core-navbar/core-navbar.component';
 // import { SectionTopComponent } from './section/global/section-top/section-top.component';
 // import { SectionBottomComponent } from './section-bottom/section-bottom.component';
-import { PageAboutComponent } from './page/page-about/page-about.component';
-import { ResumeMainComponent } from './page/page-resume/resume-main/resume-main.component';
-import { ProjectPastComponent } from './page/page-project/project-past/project-past.component';
-import { ProjectPresentComponent } from './page/page-project/project-present/project-present.component';
-import { ProjectFutureComponent } from './page/page-project/project-future/project-future.component';
-import { ProjectOngoingComponent } from './page/page-project/project-ongoing/project-ongoing.component';
-import { InfoMeComponent } from './page/page-about/info-me/info-me.component';
-import { InfoSiteComponent } from './page/page-about/info-site/info-site.component';
-import { PageHomeComponent } from './page/page-home/page-home.component';
-import { PageResumeComponent } from './page/page-resume/page-resume.component';
-import { PagePortfolioComponent } from './page/page-portfolio/page-portfolio.component';
-import { PageProjectComponent } from './page/page-project/page-project.component';
+import { ResumeMainComponent } from './page/resume/resume-main/resume-main.component';
+import { ProjectPastComponent } from './page/project/project-past/project-past.component';
+import { ProjectPresentComponent } from './page/project/project-present/project-present.component';
+import { ProjectFutureComponent } from './page/project/project-future/project-future.component';
+import { ProjectOngoingComponent } from './page/project/project-ongoing/project-ongoing.component';
+import { InfoMeComponent } from './page/info/info-me/info-me.component';
+import { InfoSiteComponent } from './page/info/info-site/info-site.component';
+// import { PortfolioComponent } from './page/portfolio/portfolio.component';
 import { SectionAdvertComponent } from './section/global/section-advert/section-advert.component';
-import { PageNoneComponent } from './page/page-none/page-none.component';
-import { ResumeArtComponent } from './page/page-resume/resume-art/resume-art.component';
-import { ResumeAnimationComponent } from './page/page-resume/resume-animation/resume-animation.component';
-import { ResumeCodeComponent } from './page/page-resume/resume-code/resume-code.component';
-import { ResumeSculptingComponent } from './page/page-resume/resume-sculpting/resume-sculpting.component';
+import { ResumeArtComponent } from './page/resume/resume-art/resume-art.component';
+import { ResumeAnimationComponent } from './page/resume/resume-animation/resume-animation.component';
+import { ResumeCodeComponent } from './page/resume/resume-code/resume-code.component';
+import { ResumeSculptingComponent } from './page/resume/resume-sculpting/resume-sculpting.component';
 import { CoreTopComponent } from './section/global/core-top/core-top.component';
 import { CoreBottomComponent } from './section/global/core-bottom/core-bottom.component';
 import { ContactComponent } from './page/contact/contact.component';
@@ -41,20 +36,18 @@ import { CreditComponent } from './page/credit/credit.component';
 import { FootbarComponent } from './section/global/footbar/footbar.component';
 import { MaintitleComponent } from './section/global/maintitle/maintitle.component';
 import { MainblurbComponent } from './section/global/mainblurb/mainblurb.component';
-
-// Import ngx-twitter-timeline
-// import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
+import { HomeComponent } from './page/home/home.component';
+import { NoneComponent } from './page/none/none.component';
+import { ProjectComponent } from './page/project/project.component';
+import { ResumeComponent } from './page/resume/resume.component';
+import { InfoComponent } from './page/info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SocialFeedsComponent,
     CoreNavbarComponent,
-    // SectionTopComponent,
-    // SectionBottomComponent,
-    PageAboutComponent,
-    // InfoMeComponent,
-    // InfoSiteComponent,
+    InfoComponent,
     ResumeMainComponent,
     ProjectPastComponent,
     ProjectPresentComponent,
@@ -62,12 +55,11 @@ import { MainblurbComponent } from './section/global/mainblurb/mainblurb.compone
     ProjectOngoingComponent,
     InfoMeComponent,
     InfoSiteComponent,
-    PageHomeComponent,
-    PageResumeComponent,
-    PagePortfolioComponent,
-    PageProjectComponent,
+    HomeComponent,
+    ResumeComponent,
+    ProjectComponent,
     SectionAdvertComponent,
-    PageNoneComponent,
+    NoneComponent,
     ResumeArtComponent,
     ResumeAnimationComponent,
     ResumeCodeComponent,
@@ -80,6 +72,11 @@ import { MainblurbComponent } from './section/global/mainblurb/mainblurb.compone
     FootbarComponent,
     MaintitleComponent,
     MainblurbComponent,
+    HomeComponent,
+    NoneComponent,
+    ProjectComponent,
+    ResumeComponent,
+    InfoComponent,
   ],
   imports: [
     NgbModule,
@@ -87,11 +84,6 @@ import { MainblurbComponent } from './section/global/mainblurb/mainblurb.compone
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule
-    // FragmentPolyfillModule.forRoot({
-    //   smooth: true
-    // })
-    // Specify library as an import
-    // NgxTwitterTimelineModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

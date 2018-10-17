@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageAboutComponent } from './page-about.component';
+import { NoneComponent } from './none.component';
 
-describe('PageAboutComponent', () => {
-  let component: PageAboutComponent;
-  let fixture: ComponentFixture<PageAboutComponent>;
+describe('NoneComponent', () => {
+  let component: NoneComponent;
+  let fixture: ComponentFixture<NoneComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageAboutComponent ]
+      declarations: [ NoneComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageAboutComponent);
+    fixture = TestBed.createComponent(NoneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
