@@ -13,15 +13,19 @@
   <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link material-icons home" routerLink="home">
-          home
+        <a class="nav-link icons-eight home" routerLink="home">
+          <img src="https://png.icons8.com/material/35/bdc3c7/home-page.png">
+          <span class="navhov-text">Home</span>
+
         </a>
       </li>
       <!-- Dropdowns -->
       <li class="nav-item dropdown info">
 
-        <a class="nav-link material-icons info" href data-toggle="dropdown">
-          info_outline
+        <a class="nav-link icons-eight info" href data-toggle="dropdown">
+          <img src="https://png.icons8.com/material/35/bdc3c7/info.png">
+          <span class="navhov-text">Info</span>
+
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
           <a class="dropdown-item" routerLink="info/me">
@@ -33,8 +37,10 @@
         </div>
       </li>
       <li class="nav-item dropdown resume">
-        <a class="nav-link dropdown-toggle io-icons resume" href data-toggle="dropdown">
-          CV's
+        <a class="nav-link icons-eight resume" href data-toggle="dropdown">
+          <img src="https://png.icons8.com/material/35/bdc3c7/resume.png">
+          <span class="navhov-text">Resumes</span>
+
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
           <a class="dropdown-item" routerLink="cv/main">
@@ -78,8 +84,9 @@
          but as sub-parts of the CV section, mainly ^
          -->
       <li class="nav-item dropdown project">
-        <a class="nav-link dropdown-toggle" href data-toggle="dropdown">
-          Projects
+        <a class="nav-link icons-eight project" href data-toggle="dropdown">
+          <img src="https://png.icons8.com/material/35/bdc3c7/task.png">
+          <span class="navhov-text">Projects</span>
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
           <a routerLink="projects/past" class="dropdown-item">
@@ -96,11 +103,11 @@
           </a>
         </div>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a href class="nav-link disabled">
           Link Other
         </a>
-      </li>
+      </li> -->
       <!-- ^ This is only here to demonstrate that I know how to use it ^ -->
     </ul>
   </div>

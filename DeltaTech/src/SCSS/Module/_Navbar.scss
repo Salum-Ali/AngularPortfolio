@@ -32,6 +32,22 @@ nav {
   }
 }
 
+//Work In Progress
+
+.navhov-text {
+  display: none;
+  transition: visibility 0s opacity 1s ease-out;
+  opacity: 0;
+  // opacity: 0;
+  // transition: visibility 0s,
+  //   opacity 0.5s linear;
+}
+
+.icons-eight:hover .navhov-text {
+  display: initial;
+  opacity: 1;
+}
+
 // @media (max-width: 381px) {
 //   .navbar-nav>li {
 //     padding-top: 0;

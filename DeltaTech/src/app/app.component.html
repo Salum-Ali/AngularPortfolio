@@ -1,6 +1,5 @@
 <div id="hero-image" class="index-hero">
   <div id="hero-content">
-
     <!-- <app-section-top></app-section-top> -->
     <div id="toEnd">
       <a name="Top" id="Top" [routerLink]="[ '.' ]" fragment="End" queryParamsHandling="merge">
@@ -8,16 +7,13 @@
       </a>
     </div>
     <hr class="sectionSplitter shortSplitter">
-
     <header class="container" id="site-header">
       <section id="siteHeadings">
         <app-maintitle></app-maintitle>
       </section>
       <app-core-navbar></app-core-navbar>
     </header>
-
     <hr class="sectionSplitter longSplitter">
-
     <main id="site-content">
       <section class="container" id="core">
         <div class="row justify-content-center" id="blurb">
@@ -39,22 +35,18 @@
             <router-outlet></router-outlet>
           </div>
         </div>
-        <div class="row justify-content-center" id="ads">
+        <div class="row justify-content-center" id="advert">
           <div class="col-12 col-sm-12 col-md-12 col-lg-12">
             <app-section-advert></app-section-advert>
           </div>
         </div>
       </section>
     </main>
-
     <hr class="sectionSplitter longSplitter">
-
     <footer id=site-footer class="container">
       <app-footbar></app-footbar>
     </footer>
-
     <hr class="sectionSplitter shortSplitter">
-
     <div id="toTop">
       <a name="End" id="End" [routerLink]="['.']" fragment="Top">
         Go to Top of Page

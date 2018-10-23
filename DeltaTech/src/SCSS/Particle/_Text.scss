@@ -5,13 +5,14 @@ h4,
 h5,
 h6 {
   color: $roseOld;
-  font-family: OptimusPrincepsSemiBold, sans-serif;
+  font-family: 'Cinzel', serif;
   text-decoration: complement($color: $roseOld)
     /*Placeholder font family untill I can find a good workflow/template to stick with*/
 }
 
 p {
-  color: $white;
+  // font-family: 'Exo 2', sans-serif;
+  color: whitesmoke;
   font-size: 1.25em;
 }
 

@@ -1,8 +1,10 @@
-@import "../../SCSS/Shard/Legend";
+// @import "../../SCSS/Shard/Legend";
+@import "../../SCSS/Shard/Blurb";
 @import "../../SCSS/Shard/Story";
 @import "../../SCSS/Shard/Feed";
+@import "../../SCSS/Shard/Advert";
 
 // @import 'Shard/Navbar';
 #core {
-  border: .5em ridge white;
+  border: .5em groove white;
 }
