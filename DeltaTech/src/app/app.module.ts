@@ -7,6 +7,9 @@ import { MaterialModule } from './material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Import ngx-twitter-timeline
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // import { FragmentPolyfillModule } from './fragment-polyfill.module';
@@ -41,6 +44,8 @@ import { NoneComponent } from './page/none/none.component';
 import { ProjectComponent } from './page/project/project.component';
 import { ResumeComponent } from './page/resume/resume.component';
 import { InfoComponent } from './page/info/info.component';
+
+
 
 @NgModule({
   declarations: [
@@ -83,7 +88,9 @@ import { InfoComponent } from './page/info/info.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    // Specify library as an import
+    NgxTwitterTimelineModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
