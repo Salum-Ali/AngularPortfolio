@@ -1,45 +1,24 @@
 @import "/../../SCSS/Variable/Color";
 
+
+
 nav {
+  .dropdown-item {
+    color: $white;
+    background-color: rgba($color: $black, $alpha: .75);
+    transition: all 500ms ease-in;
+    text-align: center;
 
-  // &.hornav {
-  //   border-radius: 999px;
-  //   background-color: #fff;
-  // }
-  ul {
-    li.dropdown {
-      a:hover {
-        // background: $blue;
-        border-radius: 999px;
-      }
+    &:hover {
+      // color: $black;
+      font-weight: bold;
+      background-color: $red;
     }
-  }
-}
 
-
-.dropdown:not(.feed-social) {
-  &:hover {
-    >.dropdown-menu {
-      display: block;
+    >.dropdown-toggle:active {
+      /*Without this, clicking will make it sticky*/
+      pointer-events: none;
     }
-  }
-}
-
-.dropdown-item {
-  color: $white;
-  background-color: rgba($color: $black, $alpha: .75);
-  transition: all 500ms ease-in;
-  text-align: center;
-
-  &:hover {
-    // color: $black;
-    font-weight: bold;
-    background-color: $red;
-  }
-
-  >.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
   }
 }
 
