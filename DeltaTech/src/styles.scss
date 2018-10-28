@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "SCSS/Layout/Head";
+@import "SCSS/Layout/Bod";
+@import "SCSS/Layout/Foot";
+@import "SCSS/Layout/Splitter";
+@import "SCSS/Module/Button";
+@import "SCSS/Module/Hero";
+@import "SCSS/Particle/Text";
+@import "SCSS/Particle/Icon";
+@import "SCSS/Particle/Image";
+@import "SCSS/Shard/Navbar";
+@import "SCSS/Variable/Color";
+
+* {
+  transition: all ease-in-out 500ms;
+  text-align: center;
+}
+
+body {
+  background: $black;
+  text-align: center;
+}
+
+#toEnd,
+#toTop {
+  padding: 5vh;
+}
