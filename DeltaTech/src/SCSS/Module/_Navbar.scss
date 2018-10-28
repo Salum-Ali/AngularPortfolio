@@ -1,6 +1,7 @@
 @import "/../../SCSS/Variable/Color";
 
 nav {
+<<<<<<< Updated upstream
 
   // &.hornav {
   //   border-radius: 999px;
@@ -27,13 +28,42 @@ nav {
             background-color: $red;
           }
         }
+=======
+  .dropdown-item {
+    color: $black;
+    background-color: rgba($color: $white, $alpha: 0.5);
+    transition: all 500ms ease-in;
+    text-align: center;
+
+    &:hover {
+      // color: $black;
+      font-weight: bold;
+      background-color: $red;
+      border-radius: 999px;
+    }
+
+    >.dropdown-toggle:active {
+      /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+    }
+  }
+
+  .icons-eight {
+    >span.navhov-text {
+      display: none;
+    }
+
+    &:focus,
+    &:hover
+
+    /* ^ This way, link text *stays* visible once the button is clicked ^ */
+      {
+      >.navhov-text {
+        display: initial;
+>>>>>>> Stashed changes
       }
     }
   }
 }
 
-// @media (max-width: 381px) {
-//   .navbar-nav>li {
-//     padding-top: 0;
-//   }
-// }
+/* ^ Evolved from https://codepen.io/KillerJK/pen/braqMJ ^ */

@@ -10,6 +10,20 @@ button {
     color: $yellow;
     border-radius: 999px;
   }
+<<<<<<< Updated upstream
+=======
+
+  a {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: $black;
+
+    &:hover {
+      background: none;
+    }
+  }
+>>>>>>> Stashed changes
 }
 
 // .button {

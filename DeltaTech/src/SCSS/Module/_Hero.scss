@@ -1,4 +1,5 @@
 #hero-image {
+<<<<<<< Updated upstream
   // background-repeat: no-repeat;
   // background-position: center center;
   // background-attachment: fixed;
@@ -29,5 +30,17 @@
   } */
   #hero-content {
     background-color: rgba(0, 0, 0, 0.70);
+=======
+  background-image: url(./assets/IMG/LGO/DeltaStudios_TestLogo_A_0.5_R4P2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  #hero-content {
+    background-color: rgba(0, 0, 0, 0.65);
+>>>>>>> Stashed changes
   }
 }

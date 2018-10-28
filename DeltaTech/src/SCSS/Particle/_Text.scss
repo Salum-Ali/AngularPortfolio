@@ -15,10 +15,18 @@ p {
 }
 
 a {
-  color: $yellow;
+  color: yellow;
 
+<<<<<<< Updated upstream
   &:hover {
     color: orange;
+=======
+  text-decoration: underline;
+
+  &:hover {
+    color: $red;
+    text-decoration: underline dotted;
+>>>>>>> Stashed changes
     // color: $white;
     background-color: $blueRegal;
   }
