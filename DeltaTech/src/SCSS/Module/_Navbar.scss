@@ -1,34 +1,6 @@
 @import "/../../SCSS/Variable/Color";
 
 nav {
-<<<<<<< Updated upstream
-
-  // &.hornav {
-  //   border-radius: 999px;
-  //   background-color: #fff;
-  // }
-  ul {
-    li {
-      a:hover {
-        // background: $blue;
-        border-radius: 999px;
-      }
-
-      .dropdown-menu {
-        justify-content: center;
-
-        a.dropdown-item {
-          color: $white;
-          background-color: rgba($color: $black, $alpha: .75);
-          transition: all 500ms ease-in;
-          text-align: center;
-
-          &:hover {
-            // color: $black;
-            background-color: $red;
-          }
-        }
-=======
   .dropdown-item {
     color: $black;
     background-color: rgba($color: $white, $alpha: 0.5);
@@ -60,7 +32,6 @@ nav {
       {
       >.navhov-text {
         display: initial;
->>>>>>> Stashed changes
       }
     }
   }

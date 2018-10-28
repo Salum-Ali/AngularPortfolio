@@ -14,27 +14,6 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 
 // import { FragmentPolyfillModule } from './fragment-polyfill.module';
 
-<<<<<<< Updated upstream
-import { SocialFeedsComponent } from './social-feeds/social-feeds.component';
-import { CoreNavbarComponent } from './core-navbar/core-navbar.component';
-import { SectionTopComponent } from './section-top/section-top.component';
-import { SectionBottomComponent } from './section-bottom/section-bottom.component';
-import { PageAboutComponent } from './page-about/page-about.component';
-import { ShardMeComponent } from './shard-me/shard-me.component';
-import { ShardSiteComponent } from './shard-site/shard-site.component';
-import { ResumeMainComponent } from './resume-main/resume-main.component';
-import { ProjectPastComponent } from './project-past/project-past.component';
-import { ProjectPresentComponent } from './project-present/project-present.component';
-import { ProjectFutureComponent } from './project-future/project-future.component';
-import { ProjectOngoingComponent } from './project-ongoing/project-ongoing.component';
-import { InfoMeComponent } from './info-me/info-me.component';
-import { InfoSiteComponent } from './info-site/info-site.component';
-import { PageHomeComponent } from './page-home/page-home.component';
-import { PageResumeComponent } from './page-resume/page-resume.component';
-import { PagePortfolioComponent } from './page-portfolio/page-portfolio.component';
-import { PageProjectComponent } from './page-project/page-project.component';
-import { ResumeGamedevComponent } from './resume-gamedev/resume-gamedev.component';
-=======
 import { SocialFeedsComponent } from './section/global/social-feeds/social-feeds.component';
 import { CoreNavbarComponent } from './section/global/core-navbar/core-navbar.component';
 import { ResumeMainComponent } from './page/resume/resume-main/resume-main.component';
@@ -65,7 +44,6 @@ import { InfoComponent } from './page/info/info.component';
 import { ButtonComponent } from './section/global/button/button.component';
 import { BackComponent } from './section/global/button/back/back.component';
 
->>>>>>> Stashed changes
 
 // Import ngx-twitter-timeline
 // import { NgxTwitterTimelineComponent } from './node_modules/ngx-twitter-timeline';
@@ -87,13 +65,6 @@ import { BackComponent } from './section/global/button/back/back.component';
     ProjectOngoingComponent,
     InfoMeComponent,
     InfoSiteComponent,
-<<<<<<< Updated upstream
-    PageHomeComponent,
-    PageResumeComponent,
-    PagePortfolioComponent,
-    PageProjectComponent,
-    ResumeGamedevComponent
-=======
     HomeComponent,
     ResumeComponent,
     ProjectComponent,
@@ -118,7 +89,6 @@ import { BackComponent } from './section/global/button/back/back.component';
     InfoComponent,
     ButtonComponent,
     BackComponent,
->>>>>>> Stashed changes
   ],
   imports: [
     NgbModule,
