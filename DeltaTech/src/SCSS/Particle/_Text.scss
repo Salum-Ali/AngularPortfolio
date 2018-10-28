@@ -17,11 +17,13 @@ p {
 }
 
 a {
-  color: $yellow;
+  color: yellow;
 
+  text-decoration: underline;
 
   &:hover {
-    color: $yellow;
+    color: $red;
+    text-decoration: underline dotted;
     // color: $white;
     // background-color: purple;
   }

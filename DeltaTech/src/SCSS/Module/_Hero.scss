@@ -1,5 +1,5 @@
 #hero-image {
-  background-image: url(./assets/IMG/LGO/DeltaStudios_TestLogo_A_0.5_R4P2.jpg) !important;
+  background-image: url(./assets/IMG/LGO/DeltaStudios_TestLogo_A_0.5_R4P2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -7,29 +7,7 @@
   height: 100%;
   width: 100%;
 
-  // &.index-hero {
-
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   background-attachment: fixed;
-  //   background-size: cover;
-
-  // }
-
-  /* &.resume-hero
-    {
-      This is a Future Section... 
-      it could happen
-    } */
-  /* &.Portfolio-hero
-    {
-      This is a Future Section
-    } */
-  /* &.project-hero
-    {
-    this is a future section
-    } */
   #hero-content {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+    background-color: rgba(0, 0, 0, 0.65);
   }
 }

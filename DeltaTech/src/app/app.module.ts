@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule, Title } from '@angular/platform-browser';
+import { NgModule, Directive, HostListener } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
@@ -12,12 +12,13 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+
+
 // import { FragmentPolyfillModule } from './fragment-polyfill.module';
 
 import { SocialFeedsComponent } from './section/global/social-feeds/social-feeds.component';
 import { CoreNavbarComponent } from './section/global/core-navbar/core-navbar.component';
-// import { SectionTopComponent } from './section/global/section-top/section-top.component';
-// import { SectionBottomComponent } from './section-bottom/section-bottom.component';
 import { ResumeMainComponent } from './page/resume/resume-main/resume-main.component';
 import { ProjectPastComponent } from './page/project/project-past/project-past.component';
 import { ProjectPresentComponent } from './page/project/project-present/project-present.component';
@@ -25,7 +26,6 @@ import { ProjectFutureComponent } from './page/project/project-future/project-fu
 import { ProjectOngoingComponent } from './page/project/project-ongoing/project-ongoing.component';
 import { InfoMeComponent } from './page/info/info-me/info-me.component';
 import { InfoSiteComponent } from './page/info/info-site/info-site.component';
-// import { PortfolioComponent } from './page/portfolio/portfolio.component';
 import { SectionAdvertComponent } from './section/global/section-advert/section-advert.component';
 import { ResumeArtComponent } from './page/resume/resume-art/resume-art.component';
 import { ResumeAnimationComponent } from './page/resume/resume-animation/resume-animation.component';
@@ -44,6 +44,8 @@ import { NoneComponent } from './page/none/none.component';
 import { ProjectComponent } from './page/project/project.component';
 import { ResumeComponent } from './page/resume/resume.component';
 import { InfoComponent } from './page/info/info.component';
+// import { ButtonComponent } from './section/global/button/button.component';
+// import { BackComponent } from './section/global/button/back/back.component';
 
 
 
@@ -82,6 +84,8 @@ import { InfoComponent } from './page/info/info.component';
     ProjectComponent,
     ResumeComponent,
     InfoComponent,
+    // ButtonComponent,
+    // BackComponent,
   ],
   imports: [
     NgbModule,
@@ -92,7 +96,29 @@ import { InfoComponent } from './page/info/info.component';
     // Specify library as an import
     NgxTwitterTimelineModule.forRoot()
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// @Component({
+//   // ...
+//   providers: [Location, { provide: LocationStrategy, useClass: PathLocationStrategy }]
+// })
+// export class AppComponent {
+//   constructor(private location: Location) { }
+
+//   // ...
+// }
+// Directive({
+//   selector: '[backButton]'
+// });
+// export class BackButtonDirective {
+//   constructor(private location: Location) { }
+
+//   @HostListener('click')
+//   onClick() {
+//     this.location.back();
+//     console.log('goBack()...');
+//   }
+// }
