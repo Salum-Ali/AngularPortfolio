@@ -12,7 +12,7 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+// import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 
 // import { FragmentPolyfillModule } from './fragment-polyfill.module';
