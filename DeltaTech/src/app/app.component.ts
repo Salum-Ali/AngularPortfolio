@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'Welcome';
-  siteName = 'SalumAli.me';
+  siteName = 'Portfolio of Salum Muhammed';
   public constructor(private titleService: Title) { }
 
   public setTitle(newTitle: string) {

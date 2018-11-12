@@ -45,6 +45,8 @@ import { ProjectComponent } from './page/project/project.component';
 import { ResumeComponent } from './page/resume/resume.component';
 import { InfoComponent } from './page/info/info.component';
 import { BckpgComponent } from './section/global/button/bckpg/bckpg.component';
+import { MottoComponent } from './section/global/footbar/motto/motto.component';
+import { IconComponent } from './section/global/footbar/icon/icon.component';
 
 
 
@@ -86,6 +88,8 @@ import { BckpgComponent } from './section/global/button/bckpg/bckpg.component';
     BckpgComponent,
     // ButtonComponent,
     BckpgComponent,
+    MottoComponent,
+    IconComponent,
   ],
   imports: [
     NgbModule,
