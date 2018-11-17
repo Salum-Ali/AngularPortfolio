@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageNoneComponent } from './page-none.component';
+import { PastComponent } from './past.component';
 
-describe('PageNoneComponent', () => {
-  let component: PageNoneComponent;
-  let fixture: ComponentFixture<PageNoneComponent>;
+describe('PastComponent', () => {
+  let component: PastComponent;
+  let fixture: ComponentFixture<PastComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageNoneComponent ]
+      declarations: [ PastComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageNoneComponent);
+    fixture = TestBed.createComponent(PastComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
