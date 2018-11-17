@@ -46,77 +46,55 @@ import { SocialComponent } from './section/feed/social/social.component';
 
 
 @NgModule({
-	declarations: [
-		AppComponent,
-		CoreNavbarComponent,
-		InfoComponent,
-		ResumeMainComponent,
-		InfoMeComponent,
-		InfoSiteComponent,
-		HomeComponent,
-		ResumeComponent,
-		ProjectComponent,
-		SectionAdvertComponent,
-		NoneComponent,
-		ResumeArtComponent,
-		ResumeAnimationComponent,
-		ResumeCodeComponent,
-		ResumeSculptingComponent,
-		CoreTopComponent,
-		CoreBottomComponent,
-		ContactComponent,
-		MapComponent,
-		CreditComponent,
-		FootbarComponent,
-		MaintitleComponent,
-		MainblurbComponent,
-		HomeComponent,
-		NoneComponent,
-		ProjectComponent,
-		ResumeComponent,
-		InfoComponent,
-		BckpgComponent,
-		// ButtonComponent,
-		BckpgComponent,
-		MottoComponent,
-		IconComponent,
-		PastComponent,
-		PresentComponent,
-		FutureComponent,
-		SocialComponent,
-	],
-	imports: [
-		NgbModule,
-		BrowserModule,
-		AppRoutingModule,
-		BrowserAnimationsModule,
-		MaterialModule,
-		// Specify library as an import
-		NgxTwitterTimelineModule.forRoot()
-	],
-	providers: [Title],
-	bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        CoreNavbarComponent,
+        InfoComponent,
+        ResumeMainComponent,
+        InfoMeComponent,
+        InfoSiteComponent,
+        HomeComponent,
+        ResumeComponent,
+        ProjectComponent,
+        SectionAdvertComponent,
+        NoneComponent,
+        ResumeArtComponent,
+        ResumeAnimationComponent,
+        ResumeCodeComponent,
+        ResumeSculptingComponent,
+        CoreTopComponent,
+        CoreBottomComponent,
+        ContactComponent,
+        MapComponent,
+        CreditComponent,
+        FootbarComponent,
+        MaintitleComponent,
+        MainblurbComponent,
+        HomeComponent,
+        NoneComponent,
+        ProjectComponent,
+        ResumeComponent,
+        InfoComponent,
+        BckpgComponent,
+        // ButtonComponent,
+        BckpgComponent,
+        MottoComponent,
+        IconComponent,
+        PastComponent,
+        PresentComponent,
+        FutureComponent,
+        SocialComponent,
+    ],
+    imports: [
+        NgbModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        // Specify library as an import
+        NgxTwitterTimelineModule.forRoot()
+    ],
+    providers: [Title],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// @Component({
-//   // ...
-//   providers: [Location, { provide: LocationStrategy, useClass: PathLocationStrategy }]
-// })
-// export class AppComponent {
-//   constructor(private location: Location) { }
-
-//   // ...
-// }
-// Directive({
-//   selector: '[backButton]'
-// });
-// export class BackButtonDirective {
-//   constructor(private location: Location) { }
-
-//   @HostListener('click')
-//   onClick() {
-//     this.location.back();
-//     console.log('goBack()...');
-//   }
-// }
