@@ -1,5 +1,5 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule, Directive, HostListener } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
@@ -23,9 +23,6 @@ import { ResumeCodeComponent } from './page/resume/resume-code/resume-code.compo
 import { ResumeSculptingComponent } from './page/resume/resume-sculpting/resume-sculpting.component';
 import { CoreTopComponent } from './section/core-top/core-top.component';
 import { CoreBottomComponent } from './section/core-bottom/core-bottom.component';
-import { ContactComponent } from './page/contact/contact.component';
-import { MapComponent } from './page/map/map.component';
-import { CreditComponent } from './page/credit/credit.component';
 import { FootbarComponent } from './section/footbar/footbar.component';
 import { MaintitleComponent } from './section/maintitle/maintitle.component';
 import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
@@ -41,9 +38,9 @@ import { PastComponent } from './page/project/past/past.component';
 import { PresentComponent } from './page/project/present/present.component';
 import { FutureComponent } from './page/project/future/future.component';
 import { SocialComponent } from './section/feed/social/social.component';
-
-// ^ Auto-Imported Modules for self-generated components ^
-
+import { ContactComponent } from './page/contact/contact.component';
+import { CreditComponent } from './page/credit/credit.component';
+import { MapComponent } from './page/map/map.component';
 
 @NgModule({
     declarations: [
@@ -65,8 +62,8 @@ import { SocialComponent } from './section/feed/social/social.component';
         CoreTopComponent,
         CoreBottomComponent,
         ContactComponent,
-        MapComponent,
         CreditComponent,
+        MapComponent,
         FootbarComponent,
         MaintitleComponent,
         MainblurbComponent,
@@ -75,8 +72,6 @@ import { SocialComponent } from './section/feed/social/social.component';
         ProjectComponent,
         ResumeComponent,
         InfoComponent,
-        BckpgComponent,
-        // ButtonComponent,
         BckpgComponent,
         MottoComponent,
         IconComponent,
