@@ -41,6 +41,8 @@ import { SocialComponent } from './section/feed/social/social.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { CreditComponent } from './page/credit/credit.component';
 import { MapComponent } from './page/map/map.component';
+import { TitleComponent } from './section/title/title.component';
+import { MainComponent } from './section/title/main/main.component';
 
 @NgModule({
     declarations: [
@@ -79,6 +81,8 @@ import { MapComponent } from './page/map/map.component';
         PresentComponent,
         FutureComponent,
         SocialComponent,
+        TitleComponent,
+        MainComponent,
     ],
     imports: [
         NgbModule,
