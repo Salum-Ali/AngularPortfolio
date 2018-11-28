@@ -4,8 +4,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: $roseOld;
+  color: #bdc3c7;
   font-family: 'Cinzel', serif;
+  font-weight: 400;
   text-decoration: complement($color: $roseOld)
     /*Placeholder font family untill I can find a good workflow/template to stick with*/
 }

@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-back-button',
   templateUrl: './bckpg.component.html',
+  styleUrls: ['../_Button.scss']
 
 })
 export class BckpgComponent {
