@@ -31,7 +31,7 @@ import { NoneComponent } from './page/none/none.component';
 import { ProjectComponent } from './page/project/project.component';
 import { ResumeComponent } from './page/resume/resume.component';
 import { InfoComponent } from './page/info/info.component';
-import { BckpgComponent } from './section/button/bckpg/bckpg.component';
+import { BckpgComponent } from './section/btn/bckpg/bckpg.component';
 import { MottoComponent } from './section/footbar/motto/motto.component';
 import { IconComponent } from './section/footbar/icon/icon.component';
 import { PastComponent } from './page/project/past/past.component';
@@ -43,6 +43,7 @@ import { CreditComponent } from './page/credit/credit.component';
 import { MapComponent } from './page/map/map.component';
 import { TitleComponent } from './section/title/title.component';
 import { MainComponent } from './section/title/main/main.component';
+import { FwdpgComponent } from './section/btn/fwdpg/fwdpg.component';
 
 @NgModule({
     declarations: [
@@ -83,6 +84,7 @@ import { MainComponent } from './section/title/main/main.component';
         SocialComponent,
         TitleComponent,
         MainComponent,
+        FwdpgComponent,
     ],
     imports: [
         NgbModule,
