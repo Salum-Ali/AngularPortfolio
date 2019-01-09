@@ -34,9 +34,6 @@ import { InfoComponent } from './page/info/info.component';
 import { BckpgComponent } from './section/btn/bckpg/bckpg.component';
 import { MottoComponent } from './section/footbar/motto/motto.component';
 import { IconComponent } from './section/footbar/icon/icon.component';
-import { PastComponent } from './page/project/past/past.component';
-import { PresentComponent } from './page/project/present/present.component';
-import { FutureComponent } from './page/project/future/future.component';
 import { SocialComponent } from './section/feed/social/social.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { CreditComponent } from './page/credit/credit.component';
@@ -44,6 +41,10 @@ import { MapComponent } from './page/map/map.component';
 import { TitleComponent } from './section/title/title.component';
 import { MainComponent } from './section/title/main/main.component';
 import { FwdpgComponent } from './section/btn/fwdpg/fwdpg.component';
+import { EeComponent } from './page/project/ee/ee.component';
+import { FahwComponent } from './page/project/fahw/fahw.component';
+import { SosComponent } from './page/project/sos/sos.component';
+import { PfhComponent } from './page/project/pfh/pfh.component';
 
 @NgModule({
     declarations: [
@@ -78,13 +79,14 @@ import { FwdpgComponent } from './section/btn/fwdpg/fwdpg.component';
         BckpgComponent,
         MottoComponent,
         IconComponent,
-        PastComponent,
-        PresentComponent,
-        FutureComponent,
         SocialComponent,
         TitleComponent,
         MainComponent,
         FwdpgComponent,
+        EeComponent,
+        FahwComponent,
+        SosComponent,
+        PfhComponent,
     ],
     imports: [
         NgbModule,

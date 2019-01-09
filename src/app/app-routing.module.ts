@@ -5,9 +5,6 @@ import { HomeComponent } from './page/home/home.component';
 import { ResumeComponent } from './page/resume/resume.component';
 import { ProjectComponent } from './page/project/project.component';
 import { ResumeMainComponent } from './page/resume/resume-main/resume-main.component';
-import { PastComponent } from './page/project/past/past.component';
-import { PresentComponent } from './page/project/present/present.component';
-import { FutureComponent } from './page/project/future/future.component';
 import { NoneComponent } from './page/none/none.component';
 import { componentFactoryName } from '@angular/compiler';
 import { ResumeAnimationComponent } from './page/resume/resume-animation/resume-animation.component';
@@ -19,6 +16,10 @@ import { InfoSiteComponent } from './page/info/info-site/info-site.component';
 import { CreditComponent } from './page/credit/credit.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { MapComponent } from './page/map/map.component';
+import { EeComponent } from './page/project/ee/ee.component';
+import { FahwComponent } from './page/project/fahw/fahw.component';
+import { SosComponent } from './page/project/sos/sos.component';
+import { PfhComponent } from './page/project/pfh/pfh.component';
 
 const routes: Routes = [
     {
@@ -91,20 +92,24 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'present',
+                redirectTo: 'pfh',
                 pathMatch: 'full'
             },
             {
-                path: 'past',
-                component: PastComponent
+                path: 'pfh',
+                component: PfhComponent
             },
             {
-                path: 'present',
-                component: PresentComponent
+                path: 'ee',
+                component: EeComponent
             },
             {
-                path: 'future',
-                component: FutureComponent
+                path: 'fahw',
+                component: FahwComponent
+            },
+            {
+                path: 'sos',
+                component: SosComponent
             },
         ]
     },
