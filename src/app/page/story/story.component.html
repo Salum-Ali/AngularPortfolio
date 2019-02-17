@@ -1,0 +1,22 @@
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link order-sm-3" routerLinkActive="active" [routerLink]="['archives']">
+      Archived (Previouse) Posts
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['updates']">
+      Updates and Announcements
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['blogs']">
+      X-Logs
+    </a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div id="archive" class="tab-pane fade in show active"><br>
+    <router-outlet></router-outlet>
+  </div>
+</div>

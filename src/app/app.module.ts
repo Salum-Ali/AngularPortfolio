@@ -45,6 +45,10 @@ import { EeComponent } from './page/project/ee/ee.component';
 import { FahwComponent } from './page/project/fahw/fahw.component';
 import { SosComponent } from './page/project/sos/sos.component';
 import { PfhComponent } from './page/project/pfh/pfh.component';
+import { StoryComponent } from './page/story/story.component';
+import { ArchiveComponent } from './page/story/archive/archive.component';
+import { UpdateComponent } from './page/story/update/update.component';
+import { BlogComponent } from './page/story/blog/blog.component';
 
 @NgModule({
     declarations: [
@@ -87,6 +91,10 @@ import { PfhComponent } from './page/project/pfh/pfh.component';
         FahwComponent,
         SosComponent,
         PfhComponent,
+        StoryComponent,
+        ArchiveComponent,
+        UpdateComponent,
+        BlogComponent,
     ],
     imports: [
         NgbModule,

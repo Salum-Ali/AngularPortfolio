@@ -18,25 +18,6 @@
       </li>
 
       <!-- Dropdowns -->
-      <li class="nav-item dropdown info">
-
-        <a class="nav-link icons-eight info" href data-toggle="dropdown">
-          <img src="https://png.icons8.com/material/35/bdc3c7/info.png" alt="About">
-          <span class="navhov-text">
-            About
-          </span>
-        </a>
-
-        <div class="dropdown-menu " style="background-color: transparent">
-          <a class="dropdown-item" routerLink="info/me">
-            About Me
-          </a>
-          <a class="dropdown-item" routerLink="info/site">
-            This Site
-          </a>
-        </div>
-
-      </li>
       <li class="nav-item dropdown resume">
         <a class="nav-link icons-eight resume" href data-toggle="dropdown">
           <img src="https://png.icons8.com/material/35/bdc3c7/resume.png" alt="Resumes">
@@ -62,6 +43,23 @@
           </a>
         </div>
       </li>
+      <li class="nav-item dropdown info">
+        <a class="nav-link icons-eight info" href data-toggle="dropdown">
+          <img src="https://png.icons8.com/material/35/bdc3c7/info-squared.png" alt="About">
+          <span class="navhov-text">
+            About
+          </span>
+        </a>
+        <div class="dropdown-menu " style="background-color: transparent">
+          <a class="dropdown-item" routerLink="info/me">
+            About Me
+          </a>
+          <a class="dropdown-item" routerLink="info/site">
+            This Site
+          </a>
+        </div>
+
+      </li>
       <li class="nav-item dropdown project">
         <a class="nav-link icons-eight project" href data-toggle="dropdown">
           <img src="https://png.icons8.com/material/35/bdc3c7/task.png" alt="Projects">
@@ -86,20 +84,24 @@
       </li>
       <li class="nav-item dropdown feed">
         <a class="nav-link icons-eight project" href data-toggle="dropdown">
-          <img src="https://png.icons8.com/material/35/bdc3c7/task.png" alt="Projects">
+          <img src="https://png.icons8.com/material/35/bdc3c7/news.png" alt="Projects">
           <span class="navhov-text">
-            RSS Feeds
+            Stories
           </span>
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
-          <a routerLink="projects/pfh" class="dropdown-item">
-            Dev-Logs
+          <a routerLink="stories/archives" class="dropdown-item">
+            Archives
           </a>
-          <a routerLink="projects/ee" class="dropdown-item">
-            Blog Series'
+          <a routerLink="stories/updates" class="dropdown-item">
+            Update Logs
+          </a>
+          <a routerLink="stories/blogs" class="dropdown-item">
+            Blogs
           </a>
         </div>
       </li>
+
       <!-- <li class="nav-item">
         <a href class="nav-link disabled">
           Link Other

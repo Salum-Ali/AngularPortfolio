@@ -20,6 +20,10 @@ import { EeComponent } from './page/project/ee/ee.component';
 import { FahwComponent } from './page/project/fahw/fahw.component';
 import { SosComponent } from './page/project/sos/sos.component';
 import { PfhComponent } from './page/project/pfh/pfh.component';
+import { ArchiveComponent } from './page/story/archive/archive.component';
+import { StoryComponent } from './page/story/story.component';
+import { UpdateComponent } from './page/story/update/update.component';
+import { BlogComponent } from './page/story/blog/blog.component';
 
 const routes: Routes = [
     {
@@ -27,30 +31,12 @@ const routes: Routes = [
         redirectTo: '/home',
         pathMatch: 'full'
     },
+    // ^ default ^
     {
         path: 'home',
         component: HomeComponent,
     },
-    {
-        path: 'info',
-        component: InfoComponent,
-        children: [
-            {
-                path: '',
-                redirectTo: 'me',
-                pathMatch: 'full'
-            },
-            {
-                path: 'me',
-                component: InfoMeComponent
-            },
-            {
-                path: 'site',
-                component: InfoSiteComponent
-            }
-        ]
-    },
-    // ^ infos ^
+    // ^ home ^
     {
         path: 'cv',
         component: ResumeComponent,
@@ -87,6 +73,26 @@ const routes: Routes = [
     },
     // ^ resumes ^
     {
+        path: 'info',
+        component: InfoComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'me',
+                pathMatch: 'full'
+            },
+            {
+                path: 'me',
+                component: InfoMeComponent
+            },
+            {
+                path: 'site',
+                component: InfoSiteComponent
+            }
+        ]
+    },
+    // ^ infos ^
+    {
         path: 'projects',
         component: ProjectComponent,
         children: [
@@ -115,9 +121,34 @@ const routes: Routes = [
     },
     // ^ projects ^
     {
+        path: 'stories',
+        component: StoryComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'archives',
+                pathMatch: 'full'
+            },
+            {
+                path: 'archives',
+                component: ArchiveComponent
+            },
+            {
+                path: 'updates',
+                component: UpdateComponent
+            },
+            {
+                path: 'blogs',
+                component: BlogComponent
+            }
+        ]
+    },
+    // ^ stories ^
+    {
         path: 'contacts',
         component: ContactComponent,
     },
+    // ^ contacts ^
     {
         path: 'maps',
         component: MapComponent,
@@ -132,7 +163,7 @@ const routes: Routes = [
         path: '**',
         component: NoneComponent
     }
-
+    // ^ 404 ^
 ];
 
 @NgModule({
