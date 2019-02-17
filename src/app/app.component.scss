@@ -26,5 +26,9 @@
 //   }
 // }
 #story {
-  text-align: left;
+  // text-align: left;
+  max-height: 600px;
+  // ^ Whole div into view if on 1080p laptop screen using chrome with visible bookmarks bar^
+  // min-height: auto;
+  overflow: auto;
 }
