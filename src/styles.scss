@@ -19,15 +19,24 @@
 
 * {
   transition: all ease-in-out 500ms;
-  text-align: center;
-}
 
-body {
-  background: $black;
-  text-align: center;
-}
+  body {
+    background: $black;
 
-#toEnd,
-#toTop {
-  padding: 5vh;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
+    }
+
+    #toEnd,
+    #toTop {
+      padding: 5vh;
+      text-align: center;
+    }
+
+  }
 }

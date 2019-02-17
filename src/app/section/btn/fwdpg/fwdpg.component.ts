@@ -1,10 +1,10 @@
 import { Location } from '@angular/common';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-fwdpg',
   templateUrl: './fwdpg.component.html',
-  styleUrls: ['./fwdpg.component.scss']
+  styleUrls: ['./fwdpg.component.scss', '../_Button.scss']
 })
 export class FwdpgComponent {
   @Input() color: string;

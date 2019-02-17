@@ -4,19 +4,13 @@ nav {
   .dropdown-item {
     color: $black;
     background-color: rgba($color: $white, $alpha: 0.5);
-    transition: all 500ms ease-in;
+    transition: all 2500ms ease-in;
     text-align: center;
 
     &:hover {
-      // color: $black;
       font-weight: bold;
       background-color: $red;
       border-radius: 999px;
-    }
-
-    >.dropdown-toggle:active {
-      /*Without this, clicking will make it sticky*/
-      pointer-events: none;
     }
   }
 
@@ -25,16 +19,33 @@ nav {
       display: none;
     }
 
-    &:focus,
-    &:hover
-
-    /* ^ This way, link text *stays* visible once the button is clicked ^ */
-      {
-      >.navhov-text {
+    &:hover {
+      .navhov-text {
         display: initial;
       }
     }
+
+    /* ^ This way, link text is visible when hovered over
+    and *stays* visible once the button is clicked ^ */
   }
+
 }
 
 /* ^ Evolved from https://codepen.io/KillerJK/pen/braqMJ ^ */
+
+// .show-time {
+//   display: initial;
+// }
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+
+
+}
+
+.dropdown:hover>.dropdown-menu:focus~.nav-link {
+  span {
+    display: inherit;
+  }
+}

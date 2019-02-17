@@ -1,24 +1,22 @@
 	@import 'Particle/Color';
-$butt-pad: 5px;
+	$butt-pad: 5px;
 
-.button
-	{
-		background: $butt-bg;
-		border-radius: 8px;
-		color: $butt-col;
-		display: inline-block;
-		padding: $butt-pad;
-		text-decoration: none;
-	}
-	.jumbo-button
-	{
-			@extend .button;
-		padding: $butt-pad + 30;
+	.button {
+	  align-content: center;
+	  background: $butt-bg;
+	  border-radius: 8px;
+	  color: $butt-col;
+	  display: inline-block;
+	  padding: $butt-pad;
+	  text-decoration: none;
 	}
 
-.light-button
-	{
-			@extend .button;
-		background: $butt-bg * 1.5;
+	.jumbo-button {
+	  @extend .button;
+	  padding: $butt-pad + 30;
 	}
 
+	.light-button {
+	  @extend .button;
+	  background: $butt-bg * 1.5;
+	}

@@ -1,7 +1,3 @@
-<!-- <p>
-  core-navbar works!
-</p> -->
-
 <nav class="navbar navbar-expand-sm justify-content-center hornav" id="top-nav">
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -12,7 +8,7 @@
   </button>
   <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item home">
         <a class="nav-link icons-eight home" routerLink="home">
           <img src="https://png.icons8.com/material/35/bdc3c7/home-page.png" alt="Home">
           <span class="navhov-text">
@@ -20,6 +16,7 @@
           </span>
         </a>
       </li>
+
       <!-- Dropdowns -->
       <li class="nav-item dropdown info">
 
@@ -29,6 +26,7 @@
             About
           </span>
         </a>
+
         <div class="dropdown-menu " style="background-color: transparent">
           <a class="dropdown-item" routerLink="info/me">
             About Me
@@ -37,6 +35,7 @@
             This Site
           </a>
         </div>
+
       </li>
       <li class="nav-item dropdown resume">
         <a class="nav-link icons-eight resume" href data-toggle="dropdown">
@@ -63,39 +62,16 @@
           </a>
         </div>
       </li>
-      <!-- <li class="nav-item dropdown portfolio">
-        <a class="nav-link dropdown-toggle" href data-toggle="dropdown">
-          Portfolios
-        </a>
-        <div class="dropdown-menu " style="background-color: transparent">
-          <a class="dropdown-item" href="#">
-            2D Work
-          </a>
-          <a class="dropdown-item" href="#">
-            3D Work
-          </a>
-          <a href="#" class="dropdown-item">
-            Design and Development
-          </a>
-        </div>
-      </li> -->
-      <!--
-         ^ Will come back to this at a later time...
-         Not sure what to add yet and how to sort it out
-         Will Probably add them as what I'm calling "Hidden Links":
-         Links not shown on the main sections of the naviigation,
-         but as sub-parts of the CV section, mainly ^
-         -->
       <li class="nav-item dropdown project">
         <a class="nav-link icons-eight project" href data-toggle="dropdown">
           <img src="https://png.icons8.com/material/35/bdc3c7/task.png" alt="Projects">
           <span class="navhov-text">
-            Projects
+            Portfolios
           </span>
         </a>
         <div class="dropdown-menu " style="background-color: transparent">
           <a routerLink="projects/pfh" class="dropdown-item">
-            All my Work
+            Portfolio Gallery
           </a>
           <a routerLink="projects/ee" class="dropdown-item">
             Environment Eight
@@ -105,6 +81,22 @@
           </a>
           <a routerLink="projects/ongoing" class="dropdown-item">
             Summers of Script
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown feed">
+        <a class="nav-link icons-eight project" href data-toggle="dropdown">
+          <img src="https://png.icons8.com/material/35/bdc3c7/task.png" alt="Projects">
+          <span class="navhov-text">
+            RSS Feeds
+          </span>
+        </a>
+        <div class="dropdown-menu " style="background-color: transparent">
+          <a routerLink="projects/pfh" class="dropdown-item">
+            Dev-Logs
+          </a>
+          <a routerLink="projects/ee" class="dropdown-item">
+            Blog Series'
           </a>
         </div>
       </li>
