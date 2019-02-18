@@ -49,6 +49,7 @@ import { StoryComponent } from './page/story/story.component';
 import { ArchiveComponent } from './page/story/archive/archive.component';
 import { UpdateComponent } from './page/story/update/update.component';
 import { BlogComponent } from './page/story/blog/blog.component';
+import { DiaryComponent } from './page/story/diary/diary.component';
 
 @NgModule({
     declarations: [
@@ -95,6 +96,7 @@ import { BlogComponent } from './page/story/blog/blog.component';
         ArchiveComponent,
         UpdateComponent,
         BlogComponent,
+        DiaryComponent,
     ],
     imports: [
         NgbModule,

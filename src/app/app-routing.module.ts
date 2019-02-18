@@ -23,7 +23,7 @@ import { PfhComponent } from './page/project/pfh/pfh.component';
 import { ArchiveComponent } from './page/story/archive/archive.component';
 import { StoryComponent } from './page/story/story.component';
 import { UpdateComponent } from './page/story/update/update.component';
-import { BlogComponent } from './page/story/blog/blog.component';
+import { DiaryComponent } from './page/story/diary/diary.component';
 
 const routes: Routes = [
     {
@@ -138,8 +138,8 @@ const routes: Routes = [
                 component: UpdateComponent
             },
             {
-                path: 'blogs',
-                component: BlogComponent
+                path: 'logs',
+                component: DiaryComponent
             }
         ]
     },
